@@ -11,11 +11,13 @@ public class Laptop extends Product implements Networked,DataStorage {
 		// TODO Auto-generated constructor stub
 	}
 	
+	@Override
 	public double getFreeCapacity(){
 		
 		return 0;
 	}
 	
+	@Override
 	public void format(){
 		
 		
