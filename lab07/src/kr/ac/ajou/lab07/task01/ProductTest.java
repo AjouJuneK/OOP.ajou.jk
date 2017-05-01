@@ -12,9 +12,9 @@ public class ProductTest {
 		tv.setChannel(13);
 		
 		Laptop lt = new Laptop();
-		lt.setPrice(1999.999);
+		lt.setPrice(-1999.999);
 		lt.setTotalCapacity(99.99);
-		lt.setUsedCapacity(43.21);
+		lt.setUsedCapacity(-43.21);
 		
 		pt.testProduct(tv);
 		pt.testNetworked(tv);
@@ -23,7 +23,7 @@ public class ProductTest {
 		pt.testNetworked(lt);
 		
 		Toaster t = new Toaster();
-		t.setPrice(72.72);
+		t.setPrice(-72.72);
 		pt.testProduct(t);
 		pt.testCooker(t);
 	}
