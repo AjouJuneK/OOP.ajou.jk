@@ -8,8 +8,12 @@ public class Laptop extends Product implements Networked,DataStorage {
 	
 	@Override
 	public double getFreeCapacity(){
-		
-		return totalCapacity - usedCapacity;
+		if(totalCapacity < 0 || usedCapacity < 0) {
+			System.out.println("Free capacity calculation ERROR!");
+			return 0;
+		}
+		else
+			return totalCapacity - usedCapacity;
 	}
 	
 	@Override
