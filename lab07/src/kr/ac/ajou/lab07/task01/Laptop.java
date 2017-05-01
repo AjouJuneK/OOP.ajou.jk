@@ -49,7 +49,10 @@ public class Laptop extends Product implements Networked,DataStorage {
 	}
 
 	public void setTotalCapacity(double totalCapacity) {
-		this.totalCapacity = totalCapacity;
+		if(totalCapacity >= 0)
+			this.totalCapacity = totalCapacity;
+		else
+			System.out.println("Total Capacity input ERROR!(Under 0)");
 	}
 
 	public double getUsedCapacity() {
@@ -57,7 +60,10 @@ public class Laptop extends Product implements Networked,DataStorage {
 	}
 
 	public void setUsedCapacity(double usedCapacity) {
-		this.usedCapacity = usedCapacity;
+		if(usedCapacity >= 0)
+			this.usedCapacity = usedCapacity;
+		else
+			System.out.println("Used Capacity input ERROR!(Under 0)");
 	}
 
 
