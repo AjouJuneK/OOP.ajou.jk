@@ -21,6 +21,11 @@ public class ProductTest {
 		pt.testProduct(lt);
 		pt.testDataStorage(lt);
 		pt.testNetworked(lt);
+		
+		Toaster t = new Toaster();
+		t.setPrice(72.72);
+		pt.testProduct(t);
+		pt.testCooker(t);
 	}
 	
 	public void testProduct(Product p)
@@ -45,6 +50,6 @@ public class ProductTest {
 
 	public void testCooker(Cooker c)
 	{
-		
+		System.out.println("It is prepared food?\n" + c.prepareFood());
 	}
 }
