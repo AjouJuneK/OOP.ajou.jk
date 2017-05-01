@@ -6,9 +6,7 @@ public abstract class Product {
 	private double price;
 
 	// constructor
-	public Product(double price) {
-		this.price = price;
-	}
+	//delete cons in abs class by namori
 
 	// method
 	public abstract String getName();

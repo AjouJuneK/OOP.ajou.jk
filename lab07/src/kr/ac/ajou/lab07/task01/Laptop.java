@@ -6,20 +6,15 @@ public class Laptop extends Product implements Networked,DataStorage {
 	private double usedCapacity;
 	
 	
-	public Laptop(double price) {
-		super(price);
-		// TODO Auto-generated constructor stub
-	}
-	
 	@Override
 	public double getFreeCapacity(){
 		
-		return 0;
+		return totalCapacity - usedCapacity;
 	}
 	
 	@Override
 	public void format(){
-		
+		System.out.println("Storage Format : NTFS");
 		
 	}
 	
@@ -33,7 +28,7 @@ public class Laptop extends Product implements Networked,DataStorage {
 	@Override
 	public double maxSpeed() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 66.66;
 	}
 
 	@Override
