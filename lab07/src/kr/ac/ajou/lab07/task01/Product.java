@@ -5,9 +5,14 @@ public abstract class Product {
 	// instance variable
 	private double price;
 
-	//method
+	// constructor
+	public Product(double price) {
+		this.price = price;
+	}
+
+	// method
 	public abstract String getName();
-	
+
 	// getter and setter
 	public double getPrice() {
 		return price;
