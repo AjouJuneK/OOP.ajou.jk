@@ -16,11 +16,11 @@ public class ProductTest {
 	{
 		
 	}
-	/*
+	
 	public void testNetworked(Networked n)
 	{
 		
-	} */
+	}
 
 	public void testCooker(Cooker c)
 	{

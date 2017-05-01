@@ -1,6 +1,6 @@
 package kr.ac.ajou.lab07.task01;
 
-public class SmartTV extends Product {
+public class SmartTV extends Product implements Networked {
 
 	public SmartTV(double price) {
 		super(price);
