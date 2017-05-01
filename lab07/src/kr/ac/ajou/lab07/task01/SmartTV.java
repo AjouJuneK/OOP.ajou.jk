@@ -2,6 +2,11 @@ package kr.ac.ajou.lab07.task01;
 
 public class SmartTV extends Product {
 
+	public SmartTV(double price) {
+		super(price);
+		// TODO Auto-generated constructor stub
+	}
+
 	private int channel;
 	
 	public int getChannel() {
